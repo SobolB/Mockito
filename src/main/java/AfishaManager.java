@@ -1,3 +1,5 @@
+package ru.netology.statistic;
+
 public class AfishaManager {
 
     protected String[] movies = new String[0];
