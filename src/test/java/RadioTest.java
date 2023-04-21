@@ -1,9 +1,11 @@
+package ru.netology.statistic;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 class RadioTest {
     @Test
-    public void test(){
+    public void test() {
         Radio radio = new Radio(30);
 
         radio.setCurrentStation(18);
