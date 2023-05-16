@@ -10,7 +10,8 @@ public class FilmManagerTest {
         String film2 = "Film 2";
         String film3 = "Film 3";
 
-        FilmManager manager = new FilmManager();
+        FilmManager manager = new FilmManager(11);
+
         manager.addFilm(film1);
         manager.addFilm(film2);
         manager.addFilm(film3);
@@ -49,7 +50,7 @@ public class FilmManagerTest {
         String film9 = "Film 9";
         String film10 = "Film 10";
 
-        FilmManager manager = new FilmManager();
+        FilmManager manager = new FilmManager(10);
         manager.addFilm(film1);
         manager.addFilm(film2);
         manager.addFilm(film3);
