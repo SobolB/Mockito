@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 public class FilmManagerTest {
     @Test
-    public void test11(){
+    public void test11() {
         String film1 = "Film 1";
         String film2 = "Film 2";
         String film3 = "Film 3";
@@ -16,13 +16,14 @@ public class FilmManagerTest {
         manager.addFilm(film2);
         manager.addFilm(film3);
 
-        String[] expected = {"Film 1","Film 2","Film 3"};
+        String[] expected = {"Film 1", "Film 2", "Film 3"};
         String[] actual = manager.findAll();
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
-    public void test21(){
+    public void test21() {
         String film1 = "Film 1";
         String film2 = "Film 2";
         String film3 = "Film 3";
@@ -32,13 +33,14 @@ public class FilmManagerTest {
         manager.addFilm(film2);
         manager.addFilm(film3);
 
-        String[] expected = {"Film 3","Film 2","Film 1"};
+        String[] expected = {"Film 3", "Film 2", "Film 1"};
         String[] actual = manager.findLast();
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
-    public void test22(){
+    public void test22() {
         String film1 = "Film 1";
         String film2 = "Film 2";
         String film3 = "Film 3";
@@ -50,7 +52,7 @@ public class FilmManagerTest {
         String film9 = "Film 9";
         String film10 = "Film 10";
 
-        FilmManager manager = new FilmManager(10);
+        FilmManager manager = new FilmManager();
         manager.addFilm(film1);
         manager.addFilm(film2);
         manager.addFilm(film3);
@@ -62,13 +64,14 @@ public class FilmManagerTest {
         manager.addFilm(film9);
         manager.addFilm(film10);
 
-        String[] expected = {"Film 10","Film 9","Film 8","Film 7","Film 6","Film 5","Film 4","Film 3","Film 2","Film 1"};
+        String[] expected = {"Film 10", "Film 9", "Film 8", "Film 7", "Film 6", "Film 5", "Film 4", "Film 3", "Film 2", "Film 1"};
         String[] actual = manager.findLast();
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
-    public void test23(){
+    public void test23() {
         String film1 = "Film 1";
         String film2 = "Film 2";
         String film3 = "Film 3";
@@ -96,7 +99,7 @@ public class FilmManagerTest {
         manager.addFilm(film11);
         manager.addFilm(film12);
 
-        String[] expected = {"Film 12","Film 11","Film 10","Film 9","Film 8","Film 7","Film 6","Film 5","Film 4","Film 3"};
+        String[] expected = {"Film 12", "Film 11", "Film 10", "Film 9", "Film 8", "Film 7", "Film 6", "Film 5", "Film 4", "Film 3"};
         String[] actual = manager.findLast();
 
         Assertions.assertArrayEquals(expected, actual);
